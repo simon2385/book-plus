@@ -1,0 +1,57 @@
+:root {
+  --color-primary: #2e7983;
+  --color-primary-light: #15aacf;
+  --color-secundary: #2a58a1;
+  --color-secundary-dark: #1c2d34;
+  --color-grey-dark: #536777;
+  --color-grey: #b7ccd8;
+  --color-grey-light: #cfe2e2;
+  --color-grey-light1: #d4f3f3;
+  --color-black: #2d3338;
+  --color-light: rgb(255, 255, 255);
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-light));
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark); }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem; }
+
+.header {
+  height: 7rem;
+  background-color: var(--color-grey-light1);
+  border-bottom: 0.1rem solid var(--color-light); }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: var(--color-grey-dark);
+  flex: 0 0 18%; }
+
+.hotel-view {
+  background-color: var(--color-grey-light);
+  flex-grow: 1; }
