@@ -2,4 +2,8 @@
   height: 7rem;
   background-color: var(--color-grey-light1);
   border-bottom: 0.1rem solid var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
 }

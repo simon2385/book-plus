@@ -1,6 +1,9 @@
 @import "abstracts/variables.scss";
 @import "abstracts/base.scss";
 
+@import "components/logo";
+@import "components/search";
+@import "components/user-nav";
 
 @import "layout/container";
 @import "layout/header";
