@@ -7,10 +7,13 @@
   --color-grey-dark: #556069;
   --color-grey: #b7ccd8;
   --color-grey-light: #cfe2e2;
-  --color-grey-light1: #dbd9b5;
+  --color-grey-light1: #dce5fa;
   --color-black: #2d3338;
-  --color-light: rgb(255, 255, 255);
+  --color-light: rgb(228, 237, 246);
   --color-light1: rgb(246, 241, 241);
 
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.4);
+  --shadow-light: 0 2rem 6rem rgba(0, 0, 0, 0.1);
+
+  --line: 2px solid var(--color-grey);
 }
