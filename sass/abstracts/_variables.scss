@@ -16,4 +16,8 @@
   --shadow-light: 0 2rem 6rem rgba(0, 0, 0, 0.1);
 
   --line: 2px solid var(--color-grey);
+
+    --gradient: to bottom right,
+      var(--color-primary),
+      var(--color-primary-light);
 }

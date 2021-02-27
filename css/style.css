@@ -13,7 +13,10 @@
   --color-light1: rgb(246, 241, 241);
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.4);
   --shadow-light: 0 2rem 6rem rgba(0, 0, 0, 0.1);
-  --line: 2px solid var(--color-grey); }
+  --line: 2px solid var(--color-grey);
+  --gradient: to bottom right,
+      var(--color-primary),
+      var(--color-primary-light); }
 
 * {
   margin: 0;
@@ -29,7 +32,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-light));
+  background-image: linear-gradient(var(--gradient));
   background-size: cover;
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
@@ -223,6 +226,40 @@ body {
     transform: scale(1);
     box-shadow: none; } }
 
+.btn {
+  font-size: 1.5rem;
+  border: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background-image: linear-gradient(var(--gradient));
+  color: var(--color-light);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+  cursor: pointer; }
+  .btn > * {
+    display: inline-block;
+    transition: all 0.4s;
+    height: 100%;
+    width: 100%; }
+  .btn__visible {
+    padding: 2rem 7.5rem; }
+  .btn__invisible {
+    position: absolute;
+    padding: 2rem 0rem;
+    left: 0;
+    top: -100%; }
+  .btn:hover {
+    background-image: linear-gradient(to top left, var(--color-primary), var(--color-primary-light)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
 .paragraph:not(:last-of-type) {
   margin-bottom: 2rem; }
 
@@ -311,6 +348,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-grey-light1);
     z-index: 1; }
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .cta__book-now {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
 
 .container {
   max-width: 120rem;
