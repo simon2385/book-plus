@@ -3,10 +3,10 @@
   background-color: var(--color-grey-light1);
   padding: 4.5rem;
   border-bottom: var(--line);
+  font-size: 1.4rem;
 }
 
 .description {
-  font-size: 1.4rem;
   flex: 0 0 60%;
   background-color: var(--color-light);
   box-shadow: var(--shadow-light);
@@ -15,6 +15,5 @@
 }
 
 .user-reviews {
-  background-color: green;
   flex: 1;
 }
