@@ -17,7 +17,13 @@
 
   --line: 2px solid var(--color-grey);
 
-    --gradient: to bottom right,
-      var(--color-primary),
-      var(--color-primary-light);
+  --gradient: to bottom right, var(--color-primary), var(--color-primary-light);
 }
+
+////////breakpoints for media querys
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1200px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em;  //500px
+$bp-smallest-phone: 23.375em //373px

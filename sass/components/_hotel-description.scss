@@ -11,6 +11,17 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media only screen and (max-width: $bp-small) {
+    margin: 1.8rem 0;
+    padding: 1.8rem 0;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+
   &__item {
     flex: 0 0 50%;
     margin-bottom: 0.7rem;
@@ -44,6 +55,10 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -52,7 +67,7 @@
     border: 0.3rem solid var(--color-light1);
 
     &:not(:last-of-type) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }

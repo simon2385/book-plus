@@ -5,6 +5,11 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $bp-smallest) {
+    order: 1;
+    flex-basis: 95%;
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;
